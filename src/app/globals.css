@@ -5,9 +5,11 @@
 @theme inline {
   --color-black-1: #020b18;
   --color-black-5: #171718;
+  --color-black-canvas: #1a2813;
 
   --color-header-border: rgba(37, 37, 37, 0.16);
   --color-header-border-dark: rgba(255, 255, 255, 0.2);
+  --color-header-border-light: #515760;
   --color-header-toggle: rgba(37, 37, 37, 0.1);
   --color-header-toggle-dark: rgba(255, 255, 255, 0.3);
 
