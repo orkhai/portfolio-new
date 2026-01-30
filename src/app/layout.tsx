@@ -3,6 +3,8 @@ import { DM_Sans, EB_Garamond } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { OffcanvasProvider } from "@/context/OffcanvasContext";
+import Offcanvas from "@/components/Offcanvas";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -70,10 +72,13 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${ebGaramond.variable} font-sans text-sm leading-6.5 antialiased`}
       >
-        <ThemeProvider>
-          <Header />
-          {children}
-        </ThemeProvider>
+        <OffcanvasProvider>
+          <ThemeProvider>
+            <Offcanvas />
+            <Header />
+            {children}
+          </ThemeProvider>
+        </OffcanvasProvider>
       </body>
     </html>
   );

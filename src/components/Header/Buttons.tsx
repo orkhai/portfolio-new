@@ -1,8 +1,10 @@
 "use client";
 
+import { useOffcanvas } from "@/context/OffcanvasContext";
 import { useTheme } from "@/context/ThemeContext";
 
 const Buttons = () => {
+  const { openMenu } = useOffcanvas();
   const { toggleTheme } = useTheme();
 
   return (
@@ -112,7 +114,10 @@ const Buttons = () => {
         </div>
 
         <div className="ml-5 h-4 leading-4">
-          <button className="relative inline-block h-4 w-5.5 -translate-y-1.75 leading-4">
+          <button
+            className="relative inline-block h-4 w-5.5 -translate-y-1.75 leading-4"
+            onClick={openMenu}
+          >
             <span className="bg-black-5 before:bg-black-5 after:bg-black-5 absolute left-0 h-0.5 w-5.5 rounded-[3px] content-[''] before:absolute before:left-0 before:-mt-1.75 before:h-0.5 before:w-2.5 before:rounded-[3px] before:content-[''] after:absolute after:left-0 after:mt-1.75 after:h-0.5 after:w-2.5 after:rounded-[3px] after:content-[''] dark:bg-white dark:before:bg-white dark:after:bg-white" />
           </button>
         </div>
