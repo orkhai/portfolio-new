@@ -9,11 +9,13 @@ import Offcanvas from "@/components/Offcanvas";
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -76,7 +78,9 @@ export default function RootLayout({
           <ThemeProvider>
             <Offcanvas />
             <Header />
-            {children}
+            <div className="dark:bg-black-base fixed inset-0 h-full w-full overflow-hidden bg-white">
+              <main>{children}</main>
+            </div>
           </ThemeProvider>
         </OffcanvasProvider>
       </body>

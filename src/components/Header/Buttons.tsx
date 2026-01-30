@@ -113,7 +113,7 @@ const Buttons = () => {
           </label>
         </div>
 
-        <div className="ml-5 h-4 leading-4">
+        <div className="ml-5 h-4 leading-4 lg:hidden">
           <button
             className="relative inline-block h-4 w-5.5 -translate-y-1.75 leading-4"
             onClick={openMenu}
