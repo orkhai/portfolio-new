@@ -1,3 +1,5 @@
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +9,12 @@ export const metadata: Metadata = {
 };
 
 const HomePage = () => {
-  return <div></div>;
+  return (
+    <>
+      <Hero />
+      <Services />
+    </>
+  );
 };
 
 export default HomePage;
