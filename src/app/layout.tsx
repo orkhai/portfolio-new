@@ -48,7 +48,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${jost.variable} ${caveat.variable} ${funnelDisplay.variable} bg-background dark:bg-background-dark font-jost leading-[1.7] antialiased`}
+        className={`${jost.variable} ${caveat.variable} ${funnelDisplay.variable} bg-background dark:text-foreground-dark dark:bg-background-dark font-jost leading-[1.7] antialiased`}
       >
         <div className="relative min-h-[50vh] overflow-hidden">
           <Header />
