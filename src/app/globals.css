@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: #f0ebe3;
+  --color-background-dark: #222831;
+  --color-footer: rgba(0, 0, 0, 0.1);
+  --color-footer-dark: rgba(255, 255, 255, 0.05);
+  --color-foreground: #262626;
+  --color-foreground-dark: #eaeaea;
+  --color-menu-overlay-dark: #31363c;
+  --color-vline-dark: #a3a5a7;
+  --color-vline-dark-2: #1d222a;
+
+  --font-jost: var(--font-jost);
+  --font-caveat: var(--font-caveat);
+  --font-funnel-display: var(--font-funnel-display);
+}
