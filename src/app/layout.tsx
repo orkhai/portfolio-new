@@ -3,11 +3,29 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/context/ThemeContext";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
+
+const themeScript = `
+(function () {
+  try {
+    const theme = localStorage.getItem("theme") || "dark";
+    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark =
+      theme === "dark" || (theme === "system" && systemDark);
+
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  } catch (_) {}
+})();
+`;
 
 export const metadata: Metadata = {
   title: "Orkhai",
@@ -26,10 +44,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} antialiased font-inter`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className={`${inter.variable} font-inter antialiased`}>
         <ThemeProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
