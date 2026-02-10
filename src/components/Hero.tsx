@@ -15,7 +15,7 @@ const Hero = () => {
               height={128}
               className="w-32"
               style={{ color: "transparent" }}
-              src="/images/3d-avatar.webp"
+              src="/images/3d-avatar.png"
             />
             <h1 className="text-3xl font-bold tracking-tight md:text-5xl lg:text-6xl">
               Hey, I&#39;m{" "}
