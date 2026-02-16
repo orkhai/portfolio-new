@@ -143,7 +143,6 @@ const Header = () => {
             <DrawerContent className="rounded-0 md:hidden">
               <DrawerHeader>
                 <DrawerTitle className="hidden">Mobile menu</DrawerTitle>
-
                 <DrawerClose asChild>
                   <Button
                     variant="ghost"
@@ -154,27 +153,34 @@ const Header = () => {
                   </Button>
                 </DrawerClose>
               </DrawerHeader>
+
               <div className="flex flex-col space-y-2 text-center sm:text-left">
                 <p className="text-muted-foreground text-sm" />
                 <nav className="flex flex-col gap-6 p-6 text-lg">
-                  <Link
-                    className={`ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 ${pathname === "/" ? "bg-accent" : ""} `}
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    className={`ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 ${pathname === "/projects" ? "bg-accent" : ""} `}
-                    href="/projects"
-                  >
-                    Projects
-                  </Link>
-                  <a
-                    className="ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
-                    href="mailto:contact@orkhai.dev"
-                  >
-                    Contact
-                  </a>
+                  <DrawerClose asChild>
+                    <Link
+                      className={`ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 ${pathname === "/" ? "bg-accent" : ""} `}
+                      href="/"
+                    >
+                      Home
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <Link
+                      className={`ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 ${pathname === "/projects" ? "bg-accent" : ""} `}
+                      href="/projects"
+                    >
+                      Projects
+                    </Link>
+                  </DrawerClose>
+                  <DrawerClose asChild>
+                    <a
+                      className="ring-offset-background focus-visible:ring-ring hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+                      href="mailto:contact@orkhai.dev"
+                    >
+                      Contact
+                    </a>
+                  </DrawerClose>
                 </nav>
                 <p />
               </div>
