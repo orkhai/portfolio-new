@@ -28,13 +28,38 @@ const themeScript = `
 `;
 
 export const metadata: Metadata = {
-  title: "Orkhai",
+  metadataBase: new URL("https://orkhai.dev"),
+  title: {
+    default: "Orkhai | Full Stack & Mobile Developer",
+    template: "%s | Orkhai",
+  },
   category: "Portfolio",
   authors: { name: "Orkhai Dickson" },
-  keywords:
-    "Orkhai,Orkhai.dev,Orkhai Software Engineer,Orkhai Web Developer,Orkhai Fullstack Developer,Orkhai Frontend Developer,Orkhai Backend Developer,Orkhai Mobile Developer,Orkhai Web Designer,Orkhai Web Developer Nigeria,Orkhai Fullstack Developer Nigeria,Orkhai Frontend Developer Nigeria,Orkhai Backend Developer Nigeria,Orkhai Mobile Developer Nigeria,Orkhai Web Designer Nigeria,Portfolio Orkhai,Portfolio Orkhai.dev,Projects Orkhai,Projects Orkhai.dev,Contact Orkhai,Contact Orkhai.dev,Orkhai Dickson,JavaScript Developer,React Developer,Next.js Developer,TypeScript Developer,Node.js Developer,Software Development,Web Applications,Responsive Design,Modern Web Development,Portfolio Website",
+  keywords: [
+    "Full Stack Developer",
+    "MERN Stack Developer",
+    "Flutter Developer",
+    "Mobile Developer",
+    "Next.js Developer",
+    "React Developer Nigeria",
+  ],
   description:
-    "Orkhai Dickson, a full-stack and mobile developer crafting user-centered digital experiences with expertise in mobile and web development.",
+    "Full Stack and Mobile Developer specializing in MERN stack and Flutter. I build scalable web and mobile apps, admin dashboards and e-commerce platforms.",
+  openGraph: {
+    title: "Orkhai | Full Stack & Mobile Developer",
+    description:
+      "I build scalable, production-ready web and mobile applications using MERN and Flutter",
+    url: "https://yourdomain.com",
+    siteName: "Orkhai",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orkhai | Full Stack Developer",
+    description:
+      "Full Stack & Mobile Developer building scalable web and mobile applications.",
+  },
 };
 
 export default function RootLayout({
