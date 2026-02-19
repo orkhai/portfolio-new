@@ -1,4 +1,4 @@
-import Tlp from "@/components/Projects/Tlp";
+import Tlp from "@/components/CaseStudies/Tlp";
 
 export const metadata = {
   title: "Think Like a Pianist",

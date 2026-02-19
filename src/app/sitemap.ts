@@ -5,7 +5,7 @@ export default function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: "https://orkhai.dev/projects",
+      url: "https://orkhai.dev/case-studies",
       lastModified: new Date(),
     },
   ];

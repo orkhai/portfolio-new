@@ -31,9 +31,9 @@ const Hero = () => {
           </div>
           <p className="bg-foreground max-w-187.5 bg-clip-text text-xl text-transparent">
             A <span className="font-bold">fullstack and mobile developer</span>{" "}
-            with solid foundations.
+            with solid expertise,
             <br />
-            passionate about crafting seamless user experiences I thrive at the
+            passionate about crafting seamless user experiences at the
             intersection of creativity and functionality.
           </p>
           <div className="mt-8 flex max-w-150 flex-col justify-between gap-8 lg:flex-row lg:items-center lg:gap-0">
@@ -47,10 +47,10 @@ const Hero = () => {
               </a>
               <Link
                 className="ring-offset-background focus-visible:ring-ring border-input bg-background hover:bg-accent hover:text-accent-foreground inline-flex h-10 items-center justify-center rounded-md border px-4 py-2 text-sm font-medium whitespace-nowrap shadow-xl transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
-                href="/projects"
+                href="/case-studies"
               >
                 <GalleryHorizontalEnd className="mr-2 h-5 w-5" />
-                View Projects
+                View Work
               </Link>
             </div>
             <div className="bg-foreground hidden h-4 w-px shrink-0 lg:block" />

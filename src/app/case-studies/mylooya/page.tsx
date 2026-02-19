@@ -1,4 +1,4 @@
-import MyLooya from "@/components/Projects/MyLooya";
+import MyLooya from "@/components/CaseStudies/MyLooya";
 
 export const metadata = {
   title: "MyLooya",

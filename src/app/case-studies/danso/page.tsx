@@ -1,4 +1,4 @@
-import Danso from "@/components/Projects/Danso";
+import Danso from "@/components/CaseStudies/Danso";
 
 export const metadata = {
   title: "Danso Group",

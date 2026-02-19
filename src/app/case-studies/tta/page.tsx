@@ -1,4 +1,4 @@
-import Tta from "@/components/Projects/Tta";
+import Tta from "@/components/CaseStudies/Tta";
 
 export const metadata = {
   title: "The Trusted Advisors",

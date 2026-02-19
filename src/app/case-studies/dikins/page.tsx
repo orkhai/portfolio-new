@@ -1,4 +1,4 @@
-import Dikins from "@/components/Projects/Dikins";
+import Dikins from "@/components/CaseStudies/Dikins";
 
 export const metadata = {
   title: "Dikins Multiventures",
