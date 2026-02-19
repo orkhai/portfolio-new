@@ -29,10 +29,10 @@ const Skills = () => {
             <h1 className="text-center text-2xl font-bold">What I can do</h1>
           </div>
           <p className="pb-4 text-gray-600 dark:text-gray-400">
-            I can help develop solutions that will help you grow your business:
+            I build solutions that can help your business grow and run more
+            smoothly.
           </p>
           <ul className="list-disc space-y-2 pl-6">
-            <li className="font-medium">UI/UX Design</li>
             <li className="font-medium">Fullstack Web Development</li>
             <li className="font-medium">Mobile App Development</li>
             <li className="font-medium">Database Design</li>
@@ -57,26 +57,26 @@ const Skills = () => {
             <h1 className="text-center text-2xl font-bold">Tools I Use</h1>
           </div>
           <p className="pb-4 text-gray-600 dark:text-gray-400">
-            I use the latest tools and technologies to build functional and
-            scalable products:
+            I creatively leverage modern tools and technologies to build
+            functional, scalable products.
           </p>
           <ul className="list-disc pl-6">
             <li>
               <h2 className="font-medium">Frontend: </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Tailwind CSS, React, TypeScript
+                Next.js, Tailwind CSS, React, TypeScript
               </p>
             </li>
             <li>
               <h2 className="font-medium">Backend: </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Node.js, Fastify, MongoDB, PostgreSQL
+                Node.js, Express, Nest.js, MongoDB, Prisma, MySQL
               </p>
             </li>
             <li>
-              <h2 className="font-medium">Design: </h2>
+              <h2 className="font-medium">Mobile: </h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Figma, Framer, Photoshop
+                Flutter, Firebase
               </p>
             </li>
           </ul>
@@ -99,20 +99,19 @@ const Skills = () => {
             <h1 className="text-center text-2xl font-bold">UI/UX Design</h1>
           </div>
           <p className="pb-4 text-gray-600 dark:text-gray-400">
-            I am a designer first, developer second. I can help design clean and
-            modern interfaces:
+            I combine design and development skills to deliver responsive,
+            interactive, and visually appealing applications.
           </p>
           <ul className="list-disc space-y-2 pl-6">
             <li className="font-medium">User-Centered Design</li>
             <li className="font-medium">Modern &amp; Clean UI</li>
             <li className="font-medium">Responsive Layouts</li>
-            <li className="font-medium">Wireframes &amp; Prototypes</li>
           </ul>
         </div>
       </div>
       <a
         className="ring-offset-background focus-visible:ring-ring border-input hover:bg-accent hover:text-accent-foreground bg-gradient-gray mt-12 ml-auto inline-flex h-11 items-center justify-center rounded-md border px-8 text-sm font-medium whitespace-nowrap shadow-lg transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
-        href="/projects"
+        href="/case-studies"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +130,7 @@ const Skills = () => {
           <rect width={7} height={9} x={14} y={12} rx={1} />
           <rect width={7} height={5} x={3} y={16} rx={1} />
         </svg>
-        View My Projects
+        Explore
       </a>
     </section>
   );

@@ -1,4 +1,4 @@
-import Earnabler from "@/components/Projects/Earnabler";
+import Earnabler from "@/components/CaseStudies/Earnabler";
 
 export const metadata = {
   title: "EARNabler",

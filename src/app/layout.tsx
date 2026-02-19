@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -75,6 +76,11 @@ export default function RootLayout({
       <body className={`${inter.variable} font-inter antialiased`}>
         <ThemeProvider>
           <Header />
+          <Toaster
+            position="top-right"
+            toastOptions={{ style: { fontFamily: "Inter" } }}
+            richColors
+          />
           {children}
           <Footer />
         </ThemeProvider>

@@ -9,7 +9,7 @@ const Footer = () => {
                 <h2 className="text-xl font-bold">Orkhai Dickson</h2>
                 <div className="flex items-center gap-2">
                   <p className="text-gray-700 dark:text-gray-400">
-                    Based In Nigeria
+                    Global Remote
                   </p>
                 </div>
               </div>
@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col md:flex-row md:space-x-8">
             <p className="max-w-md text-gray-700 dark:text-gray-400">
-              Website built with Next.js, Typescript and Tailwind CSS.
+              Building 100% seamless user experiences
             </p>
           </div>
         </div>

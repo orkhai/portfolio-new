@@ -1,13 +1,13 @@
-import Projects from "@/components/Projects/Projects";
+import CaseStudies from "@/components/CaseStudies/CaseStudies";
 
 export const metadata = {
-  title: "Projects",
+  title: "Case Studies",
   description:
     "Explore my portfolio of scalable web and mobile applications, admin dashboards, ERP systems and others built with MERN stack and Flutter",
 };
 
-const ProjectsPage = () => {
-  return <Projects />;
+const CaseStudiesPage = () => {
+  return <CaseStudies />;
 };
 
-export default ProjectsPage;
+export default CaseStudiesPage;

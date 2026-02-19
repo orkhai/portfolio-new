@@ -1,4 +1,4 @@
-import Bmo from "@/components/Projects/Bmo";
+import Bmo from "@/components/CaseStudies/Bmo";
 
 export const metadata = {
   title: "BMO Foundation",

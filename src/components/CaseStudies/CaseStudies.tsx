@@ -2,13 +2,13 @@ import { SendHorizonal } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Projects = () => {
+const CaseStudies = () => {
   return (
     <section className="border-border bg-background flex min-h-250 flex-col border-t px-5 py-10 sm:px-20 xl:px-52">
       <div>
-        <h1 className="mb-2 text-4xl font-bold">Projects</h1>
+        <h1 className="mb-2 text-4xl font-bold">Case Studies</h1>
         <p className="text-gray-600 dark:text-gray-400">
-          Here you will find a selection of projects I have worked on.
+          Here&#39;s a glimpse into some of my work.
         </p>
       </div>
 
@@ -19,7 +19,7 @@ const Projects = () => {
         }}
       >
         <div className="grid grid-cols-[minmax(0px,1fr)] gap-y-6">
-          <Link href="/projects/mylooya">
+          <Link href="/ca/mylooya">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -62,7 +62,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/tlp">
+          <Link href="/case-studies/tlp">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -106,7 +106,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/earnabler">
+          <Link href="/case-studies/earnabler">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -149,7 +149,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/tta">
+          <Link href="/case-studies/tta">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -191,7 +191,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/dikins">
+          <Link href="/case-studies/dikins">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -232,7 +232,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/bmo">
+          <Link href="/case-studies/bmo">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -276,7 +276,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/danso">
+          <Link href="/case-studies/danso">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -347,7 +347,7 @@ const Projects = () => {
         }}
       >
         <div className="grid grid-cols-[minmax(0px,1fr)] gap-y-3">
-          <Link href="/projects/mylooya">
+          <Link href="/case-studies/mylooya">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -390,7 +390,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/earnabler">
+          <Link href="/case-studies/earnabler">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -433,7 +433,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/dikins">
+          <Link href="/case-studies/dikins">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -474,7 +474,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/danso">
+          <Link href="/case-studies/danso">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -515,7 +515,7 @@ const Projects = () => {
           </Link>
         </div>
         <div className="grid grid-cols-[minmax(0px,1fr)] gap-y-3">
-          <Link href="/projects/tlp">
+          <Link href="/case-studies/tlp">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -559,7 +559,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/tta">
+          <Link href="/case-studies/tta">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -601,7 +601,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          <Link href="/projects/bmo">
+          <Link href="/case-studies/bmo">
             <div className="dark:border-border group relative overflow-hidden rounded-lg border border-gray-300">
               <div className="relative">
                 <Image
@@ -673,4 +673,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default CaseStudies;
