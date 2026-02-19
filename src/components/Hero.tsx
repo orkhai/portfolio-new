@@ -31,10 +31,8 @@ const Hero = () => {
           </div>
           <p className="bg-foreground max-w-187.5 bg-clip-text text-xl text-transparent">
             A <span className="font-bold">fullstack and mobile developer</span>{" "}
-            with solid expertise,
-            <br />
-            passionate about crafting seamless user experiences at the
-            intersection of creativity and functionality.
+            with solid expertise and passionate about crafting seamless user
+            experiences at the intersection of creativity and functionality.
           </p>
           <div className="mt-8 flex max-w-150 flex-col justify-between gap-8 lg:flex-row lg:items-center lg:gap-0">
             <div className="flex gap-2 lg:gap-4">
